@@ -12,10 +12,95 @@
     --white: hsl(0, 0%, 100%);
     --paragraph: 14px;
     --font-family: 'Inter', sans-serif;
+    --font-sm: 400 var(--font-family);
+    --font-md: 600 var(--font-family);
+    --font-lg: 700 var(--font-family);
 }
 
 body {
     background-color: var(--grey-lg);
     color: var(--white);
     font-family: var(--font-family);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--grey-md);
+    width: 400px;
+    
+    font-family: var();
+}
+
+header {
+    text-align: center;
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+}
+
+main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .loc {
+        color: var(--green);
+    }
+
+    img {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 100px;
+        height: auto;
+        margin-block: 40px;
+    }
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+    
+    
+}
+
+.hub a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.hub a div{
+    width: 300px;
+    height: 50px;
+    background-color: var(--grey-sm);
+    text-align: center;
+    padding-block: 15px;
+    border-radius: 7px;
+    font-weight: 600;
+    
+    
+
+
+}
+
+.hub div:hover {
+    background-color: var(--green);
+    color: var(--grey-lg);
+    
 }
